@@ -4,6 +4,9 @@ import './index.css'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 
+const TestComponent = () => <p>просто render</p>
+const a1dd = 10
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
