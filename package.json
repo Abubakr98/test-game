@@ -60,9 +60,8 @@
     }
   },
   "lint-staged": {
-    "./src/*.{js,jsx,ts,tsx}": [
-      "lint --max-warnings=0",
-      "format"
+    "*.{ts,tsx}": [
+      "tsc --noEmit && eslint src/**/*.ts{,x}"
     ]
   }
 }
