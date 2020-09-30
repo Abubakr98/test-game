@@ -58,7 +58,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "cross-env CI=true react-scripts test --env=jsdom"
+      "pre-push": "npm run test"
     }
   },
   "lint-staged": {
