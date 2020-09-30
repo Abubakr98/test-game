@@ -57,7 +57,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "yarn test --watchAll"
+      "pre-push": "CI=true yarn test --watchAll"
     }
   },
   "lint-staged": {
