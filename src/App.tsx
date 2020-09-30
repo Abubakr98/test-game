@@ -4,7 +4,7 @@ import React from 'react'
 import logo from './logo.svg'
 
 const App: React.FC = () => {
-  const add = 10
+  const a1dd = 10
   return (
     <div className='App'>
       <header className='App-header'>
