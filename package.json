@@ -56,12 +56,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "test"
     }
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "tsc --noEmit && eslint src/**/*.ts{,x}"
+      "eslint src/**/*.ts{,x}"
     ]
   }
 }
