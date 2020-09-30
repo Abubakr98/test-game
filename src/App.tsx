@@ -3,7 +3,7 @@ import React from 'react'
 
 import logo from './logo.svg'
 
-const TestComponent = () => <p>просто render</p>
+const TestComponent = () => <p>просто render</p>;
 const a1dd = 10;
 const App: React.FC = () => {
   return (
