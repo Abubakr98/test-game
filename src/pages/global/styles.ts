@@ -1,4 +1,3 @@
-// import styled from 'styled-components'
 /// <reference types="styled-components/cssprop" />
 const orange120 = '#E87928'
 const orange100 = '#FF8B37'

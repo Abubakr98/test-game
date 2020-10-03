@@ -48,7 +48,7 @@ const Button = styled.button<IProps>`
         ? `${black40}`
         : p.state === 'checked'
         ? `${orange100}`
-        : `${black40}`};
+        : `${black5}`};
     border: none;
   }
 `

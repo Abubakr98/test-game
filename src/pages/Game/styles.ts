@@ -10,7 +10,6 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1440px;
   height: 100vh;
-  padding-top: 130px;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
@@ -40,6 +39,10 @@ const Main = styled.div`
   min-width: 300px;
   align-items: flex-start;
   justify-content: space-between;
+  padding-top: 130px;
+  @media (max-width: 1170px) {
+    padding-top: 0;
+  }
   @media (max-height: 768px) {
     justify-content: space-between;
   }
@@ -53,9 +56,10 @@ const Question = styled.div`
   }
   min-width: 300px;
   @media (max-width: 768px) {
+    padding: 0 16px;
     text-align: center;
     & h1 {
-      font-size: 22px;
+      font-size: 18px;
     }
   }
 `
@@ -68,6 +72,9 @@ const Answers = styled.div`
   min-width: 300px;
   & > button {
     margin: 0 16px 32px 16px;
+  }
+  @media (max-width: 1170px) {
+    justify-content: center;
   }
   @media (max-width: 768px) {
     justify-content: center;
@@ -87,7 +94,7 @@ const Scoreboard = styled.div<IProps>`
   display: flex;
   justify-content: flex-end;
   flex-direction: column-reverse;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   right: 0;
   padding-top: 150px;
@@ -108,6 +115,9 @@ const Scoreboard = styled.div<IProps>`
     svg {
       height: 30px;
     }
+  }
+  @media (max-height: 768px) {
+    padding-top: 30px;
   }
 `
 const Img = styled.div`
