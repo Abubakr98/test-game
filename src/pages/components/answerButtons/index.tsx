@@ -10,7 +10,6 @@ const AnswerButton: React.FC<IAnswerButtonProps> = ({
   name,
   text,
   isRight,
-  state,
 }: IAnswerButtonProps) => {
   const gameData = useSelector((rootState: RootState) => rootState.game)
   const disable = useSelector((rootState: RootState) => rootState.disableRound)

@@ -45,10 +45,10 @@ const Button = styled.button<IProps>`
     top: 35%;
     background-color: ${(p) =>
       !p.state
-        ? `${black5}`
+        ? `${black40}`
         : p.state === 'checked'
         ? `${orange100}`
-        : `${black5}`};
+        : `${black40}`};
     border: none;
   }
 `

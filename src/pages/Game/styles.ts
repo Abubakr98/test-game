@@ -13,15 +13,15 @@ const Wrapper = styled.div`
   padding-top: 130px;
   display: flex;
   margin: 0 auto;
-  /* background-color: aquamarine; */
   justify-content: space-between;
-  max-height: 900px;
+  padding-bottom: 100px;
+  position: relative;
+  height: 100vh;
   @media (max-width: 768px) {
-    padding-top: 0;
+    padding: 0;
   }
 `
 const Menu = styled.div`
-  background-color: red;
   width: 100%;
   padding: 10px;
   display: none;
@@ -38,7 +38,6 @@ const Main = styled.div`
   flex-direction: column;
   width: 845px;
   min-width: 300px;
-  background-color: antiquewhite;
   align-items: flex-start;
   justify-content: space-between;
   @media (max-height: 768px) {
@@ -52,7 +51,6 @@ const Question = styled.div`
     font-size: 32px;
     color: ${black100};
   }
-  background-color: yellowgreen;
   min-width: 300px;
   @media (max-width: 768px) {
     text-align: center;
@@ -66,7 +64,6 @@ const Answers = styled.div`
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
-  background-color: green;
   width: 100%;
   min-width: 300px;
   & > button {
@@ -86,15 +83,23 @@ const Answers = styled.div`
   }
 `
 const Scoreboard = styled.div<IProps>`
-  background-color: violet;
   width: 376px;
   display: flex;
   justify-content: flex-end;
   flex-direction: column-reverse;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 150px;
+  height: 100vh;
+  background-color: #ffffff;
   @media (max-width: 768px) {
     display: ${(p) => (p.isShow ? 'flex' : 'none')};
     justify-content: center;
     position: absolute;
+    padding-top: 0;
+    top: 0;
+    right: 0;
     width: 100%;
     z-index: 500;
     height: 100%;
