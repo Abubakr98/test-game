@@ -1,18 +1,23 @@
-import { createModel } from '@rematch/core'
-
-import { RootModel } from '.'
 import { IGame } from './game'
 
-let localRound = localStorage.getItem('round')
-if (localRound) {
-  localRound = JSON.parse(localRound)
-}
-
-const round = createModel<RootModel>({
-  state: localRound,
-  reducers: {
-    setRound: (state: IGame, payload: IGame) => payload,
+export default {
+  state: {
+    question: null,
+    cost: null,
+    answers: null,
+    id: null,
   },
-})
-
-export default round
+  reducers: {
+    setRound: (state: IGame, payload: IGame): IGame => {
+      localStorage.setItem('round', JSON.stringify(payload))
+      return payload
+    },
+    fetchRoundData: (): IGame => {
+      let localRound = localStorage.getItem('round')
+      if (localRound) {
+        localRound = JSON.parse(localRound)
+      }
+      return (localRound as unknown) as IGame
+    },
+  },
+}

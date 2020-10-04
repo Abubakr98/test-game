@@ -2,19 +2,21 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 
-import { Dispatch } from '../../../store'
+import { Dispatch } from '../../store'
 import { ITextWithButtonProps } from './types'
 import { Main, Button, Title } from './styles'
-import data from '../../../game.json'
+import data from '../../game.json'
+import { Game } from '../../models/game'
 
 const TextWithButton: React.FC<ITextWithButtonProps> = ({
   title,
   btnText,
 }: ITextWithButtonProps) => {
-  const { game, disableRound } = useDispatch<Dispatch>()
+  const { game, disableRound, round } = useDispatch<Dispatch>()
   const handleClick = () => {
     localStorage.removeItem('round')
-    game.setGameData(data)
+    round.fetchRoundData()
+    game.setGameData((data as unknown) as Game)
     disableRound.setDisable(false)
   }
   return (

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { white100, orange5 } from '../global/styles'
+import { white100, orange5 } from '../../styles'
 
 const Wrapper = styled.div`
   background-color: ${white100};

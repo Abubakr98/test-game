@@ -10,7 +10,7 @@ import {
   green5,
   red5,
   red100,
-} from '../../global/styles'
+} from '../../styles'
 
 interface IProps {
   state?: string

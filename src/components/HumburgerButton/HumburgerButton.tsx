@@ -1,11 +1,12 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 
-import { Dispatch } from '../../../store'
+import { Dispatch } from '../../store'
 import { Сontainer } from './style'
 
 const HumburgerButton: React.FC = () => {
   const { changeVisibility } = useDispatch<Dispatch>().menu
+
   return (
     <Сontainer>
       <input

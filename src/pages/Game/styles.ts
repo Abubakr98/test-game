@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { black100 } from '../global/styles'
+import { black100 } from '../../styles'
 
 interface IProps {
   isShow: boolean
@@ -94,7 +94,6 @@ const Scoreboard = styled.div<IProps>`
   display: flex;
   justify-content: flex-end;
   flex-direction: column-reverse;
-  /* position: absolute; */
   top: 0;
   right: 0;
   padding-top: 150px;

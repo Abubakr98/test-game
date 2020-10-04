@@ -1,8 +1,6 @@
-const menu = {
+export default {
   state: false,
   reducers: {
     changeVisibility: (state: boolean): boolean => !state,
   },
 }
-
-export default menu

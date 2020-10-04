@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { black100 } from '../global/styles'
+import { black100 } from '../../styles'
 
 const Text = styled.div`
   display: flex;

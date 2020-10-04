@@ -1,11 +1,6 @@
-import { createModel } from '@rematch/core'
-import { RootModel } from '.'
-
-const disableRound = createModel<RootModel>({
+export default {
   state: false,
   reducers: {
-    setDisable: (state: boolean, payload: boolean) => payload,
+    setDisable: (state: boolean, payload: boolean): boolean => payload,
   },
-})
-
-export default disableRound
+}

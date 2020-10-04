@@ -6,7 +6,8 @@ import {
   orange80,
   orange120,
   black100,
-} from '../../global/styles'
+} from '../../styles'
+// todo, TextWit....styles.ts
 
 const Main = styled.div`
   @media (max-width: 768px) {

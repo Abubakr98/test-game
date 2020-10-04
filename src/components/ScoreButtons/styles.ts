@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import styled from 'styled-components'
 
-import { black40, black100, orange100, black5 } from '../../global/styles'
+import { black40, black100, orange100, black5 } from '../../styles'
 
 interface IProps {
   state?: string
