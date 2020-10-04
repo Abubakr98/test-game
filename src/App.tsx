@@ -13,7 +13,7 @@ const App: React.FC = () => {
   useEffect(() => {
     game.fetchGameData()
     round.fetchRoundData()
-  }, [game, round])
+  }, [])
   return (
     <>
       <GlobalStyle />
