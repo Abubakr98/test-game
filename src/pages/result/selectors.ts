@@ -1,6 +1,6 @@
 import { RootState } from '../../store'
 
-export const selectState = (
+const selectState = (
   state: RootState
 ): {
   round: {
@@ -12,3 +12,4 @@ export const selectState = (
 } => ({
   round: state.round,
 })
+export default selectState

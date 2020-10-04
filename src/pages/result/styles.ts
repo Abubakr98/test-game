@@ -27,4 +27,4 @@ const Text = styled.div`
     align-items: center;
   }
 `
-export { Text }
+export default Text

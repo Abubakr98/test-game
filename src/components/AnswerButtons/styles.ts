@@ -115,4 +115,4 @@ const Button = styled.button<IProps>`
   }
 `
 
-export { Button }
+export default Button

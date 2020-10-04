@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { IAnswerButtonProps } from './types'
-import { Button as ButtonContainer } from './styles'
+import ButtonContainer from './styles'
 
 const Button = ({ text }: { text: string }) => {
   // todo, move to component

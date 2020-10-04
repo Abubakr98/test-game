@@ -3,75 +3,42 @@ import styled from 'styled-components'
 import { black100 } from '../../styles'
 
 const Сontainer = styled.div`
-  width: 24px;
+  width: 50px;
   display: flex;
   justify-content: center;
-  & .visuallyHidden {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
+  .ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
-  .hamburger {
-    margin: 0 auto;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .hamburger .bar {
-    padding: 0;
-    width: 30px;
-    height: 4px;
-    background-color: ${black100};
-    display: block;
-    border-radius: 4px;
-    transition: all 0.4s ease-in-out;
-    position: absolute;
-  }
-
-  .bar1 {
-    top: 0;
-  }
-
-  .bar2,
-  .bar3 {
-    top: 13.5px;
-  }
-
-  .bar3 {
-    right: 0;
-  }
-
-  .bar4 {
-    bottom: 0;
-  }
-  /* HAMBURGER 1 */
-  .checkbox1:checked + label > .hamburger1 > .bar1 {
+  .hamRotate.active {
     transform: rotate(45deg);
-    transform-origin: 5%;
-    width: 41px;
   }
-
-  .checkbox1:checked + label > .hamburger1 > .bar2 {
-    transform: translateX(-40px);
-    background-color: transparent;
+  .hamRotate180.active {
+    transform: rotate(180deg);
   }
-
-  .checkbox1:checked + label > .hamburger1 > .bar3 {
-    transform: translateX(40px);
-    background-color: transparent;
+  .line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: ${black100};
+    stroke-width: 5.5;
+    stroke-linecap: round;
   }
-
-  .checkbox1:checked + label > .hamburger1 > .bar4 {
-    transform-origin: 5%;
-    transform: rotate(-45deg);
-    width: 41px;
+  .ham1 .top {
+    stroke-dasharray: 40 139;
+  }
+  .ham1 .bottom {
+    stroke-dasharray: 40 180;
+  }
+  .ham1.active .top {
+    stroke-dashoffset: -98px;
+  }
+  .ham1.active .bottom {
+    stroke-dashoffset: -138px;
   }
 `
-export { Сontainer }
+export default Сontainer

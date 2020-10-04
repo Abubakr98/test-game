@@ -8,7 +8,7 @@ import ScoreButton from '../../components/ScoreButtons'
 import Humberger from '../../components/HumburgerButton'
 import data from '../../game.json'
 import { IGame } from '../../models/game'
-import { selectState } from './selectors'
+import selectState from './selectors'
 
 const Game: React.FC = () => {
   const { gameData, isShow } = useSelector(selectState)
@@ -21,9 +21,8 @@ const Game: React.FC = () => {
     return ''
   }
 
-  if (!gameData) {
-    return <Redirect to='/' />
-  }
+  if (!gameData) return <Redirect to='/' />
+  if (gameData.length === 0) return <Redirect to='/result' />
   return (
     <Wrapper>
       <Main>

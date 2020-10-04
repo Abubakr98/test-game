@@ -9,8 +9,7 @@
 /coverage
 
 # production
-/build
-
+# /build // off because github pages
 # misc
 .DS_Store
 .env.local
