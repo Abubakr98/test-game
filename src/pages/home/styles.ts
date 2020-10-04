@@ -8,15 +8,15 @@ const Wrapper = styled.div`
   height: 100vh;
   position: relative;
   z-index: 0;
-  & .bg {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 100vh 100vw;
-    border-color: transparent transparent ${orange5} transparent;
-    position: absolute;
-    z-index: 1;
-  }
+`
+const BG = styled.div`
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 100vh 100vw;
+  border-color: transparent transparent ${orange5} transparent;
+  position: absolute;
+  z-index: 1;
 `
 
 const Main = styled.div`
@@ -57,4 +57,4 @@ const Img = styled.div`
     width: 90%;
   }
 `
-export { Wrapper, Main, Text, Img }
+export { Wrapper, Main, Text, Img, BG }

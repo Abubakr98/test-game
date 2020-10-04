@@ -5,11 +5,10 @@ import { Text } from './styles'
 import hand from '../../img/hand.png'
 import TextWithButton from '../../components/TextWithButton'
 import { Wrapper, Main, Img } from '../Home/styles'
-
-import { RootState } from '../../store'
+import { selectState } from './selectors'
 
 const Result: React.FC = () => {
-  const round = useSelector((rootState: RootState) => rootState.round) // todo, move to selectors
+  const { round } = useSelector(selectState)
   return (
     <Wrapper>
       <div className='bg' />

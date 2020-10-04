@@ -1,14 +1,13 @@
 import React from 'react'
 
-import { Wrapper, Main, Text, Img } from './styles'
+import { Wrapper, Main, Text, Img, BG } from './styles'
 import hand from '../../img/hand.png'
 import TextWithButton from '../../components/TextWithButton'
 
 const Home: React.FC = () => {
   return (
     <Wrapper>
-      <div className='bg' />
-      {/* todo? bg to style compo */}
+      <BG />
       <Main>
         <Img>
           <img src={hand} alt='hand' />

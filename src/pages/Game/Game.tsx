@@ -14,12 +14,11 @@ const Game: React.FC = () => {
   const { gameData, isShow } = useSelector(selectState)
 
   const checkPassed = (answer: { id: number }) => {
-    // todo, replace to if with early returns
-    return answer.id === gameData[0].id
-      ? 'checked'
-      : gameData.findIndex((x: IGame) => x.id === answer.id) === -1
-      ? 'passed'
-      : ''
+    if (answer.id === gameData[0].id) return 'checked'
+    if (gameData.findIndex((x: IGame) => x.id === answer.id) === -1)
+      return 'passed'
+
+    return ''
   }
 
   if (!gameData) {
