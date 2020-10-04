@@ -21,8 +21,9 @@ const Game: React.FC = () => {
     return ''
   }
 
-  if (!gameData) return <Redirect to='/' />
-  if (gameData.length === 0) return <Redirect to='/result' />
+  if (!gameData) return <Redirect to={`${process.env.PUBLIC_URL}/`} />
+  if (gameData.length === 0)
+    return <Redirect to={`${process.env.PUBLIC_URL}/result`} />
   return (
     <Wrapper>
       <Main>
