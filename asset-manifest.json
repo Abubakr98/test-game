@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/test-game/static/js/main.b25f6ff2.chunk.js",
+    "main.js.map": "/test-game/static/js/main.b25f6ff2.chunk.js.map",
+    "runtime-main.js": "/test-game/static/js/runtime-main.a9cac5a2.js",
+    "runtime-main.js.map": "/test-game/static/js/runtime-main.a9cac5a2.js.map",
+    "static/js/2.f7e38a0c.chunk.js": "/test-game/static/js/2.f7e38a0c.chunk.js",
+    "static/js/2.f7e38a0c.chunk.js.map": "/test-game/static/js/2.f7e38a0c.chunk.js.map",
+    "index.html": "/test-game/index.html",
+    "precache-manifest.c4cf576e3b92fba7ee6b2073c9971cd9.js": "/test-game/precache-manifest.c4cf576e3b92fba7ee6b2073c9971cd9.js",
+    "service-worker.js": "/test-game/service-worker.js",
+    "static/js/2.f7e38a0c.chunk.js.LICENSE.txt": "/test-game/static/js/2.f7e38a0c.chunk.js.LICENSE.txt",
+    "static/media/hand.png": "/test-game/static/media/hand.45dc5593.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9cac5a2.js",
+    "static/js/2.f7e38a0c.chunk.js",
+    "static/js/main.b25f6ff2.chunk.js"
+  ]
+}
