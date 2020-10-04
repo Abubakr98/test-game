@@ -101,19 +101,16 @@ const Button = styled.button<IProps>`
   }
 
   @media (max-width: 768px) {
-    width: 300px;
+    width: 100%;
     svg {
       width: 100%;
+      z-index: 5;
     }
     & > .hr1,
     .hr2 {
-      width: 10px;
-    }
-    & > .hr1 {
-      left: -9px;
-    }
-    & > .hr2 {
-      right: -9px;
+      width: 100%;
+      z-index: 2;
+      top: 40%;
     }
   }
 `

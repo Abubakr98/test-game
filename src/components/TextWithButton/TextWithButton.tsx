@@ -14,6 +14,7 @@ const TextWithButton: React.FC<ITextWithButtonProps> = ({
 }: ITextWithButtonProps) => {
   const { game, disableRound, round } = useDispatch<Dispatch>()
   const handleClick = () => {
+    localStorage.removeItem('game')
     localStorage.removeItem('round')
     round.fetchRoundData()
     game.setGameData((data as unknown) as Game)

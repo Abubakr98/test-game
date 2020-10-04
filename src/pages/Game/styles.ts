@@ -70,6 +70,7 @@ const Answers = styled.div`
   justify-content: flex-start;
   width: 100%;
   min-width: 300px;
+  overflow: hidden;
   & > button {
     margin: 0 16px 32px 16px;
   }
