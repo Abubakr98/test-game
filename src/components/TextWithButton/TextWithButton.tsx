@@ -23,7 +23,7 @@ const TextWithButton: React.FC<ITextWithButtonProps> = ({
   return (
     <Main>
       <Title>{title}</Title>
-      <Link to={`${process.env.PUBLIC_URL}/game`}>
+      <Link to='/game'>
         <Button onClick={handleClick}>{btnText}</Button>
       </Link>
     </Main>

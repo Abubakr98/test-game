@@ -19,13 +19,13 @@ const App: React.FC = () => {
       <GlobalStyle />
       <Router>
         <Switch>
-          <Route path={`${process.env.PUBLIC_URL}/`} exact>
+          <Route path='/' exact>
             <Home />
           </Route>
-          <Route path={`${process.env.PUBLIC_URL}/game`}>
+          <Route path='/game'>
             <Game />
           </Route>
-          <Route path={`${process.env.PUBLIC_URL}/result`}>
+          <Route path='/result'>
             <Result />
           </Route>
         </Switch>

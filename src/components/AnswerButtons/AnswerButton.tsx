@@ -19,7 +19,7 @@ const AnswerButton: React.FC<IAnswerButtonProps> = ({
   const history = useHistory()
   const finishGame = useCallback(() => {
     localStorage.removeItem('game')
-    history.push(`${process.env.PUBLIC_URL}/result`)
+    history.push('/result')
   }, [history])
   const hendleAnswer = () => {
     if (disable) return
