@@ -1,4 +1,5 @@
-#### view demo https://abubakr98.github.io/test-game/
+#### true demo here https://modest-franklin-fefc78.netlify.app/
+#### githab pages demo https://abubakr98.github.io/test-game/
 
 ## Installation
 
